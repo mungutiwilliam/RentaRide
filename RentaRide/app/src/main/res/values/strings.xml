@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Rent a Ride</string>
+    <string name="ID_Number">Enter ID Number</string>
+    <string name="password">Enter Password</string>
+    <string name="f_name">Enter First Name</string>
+    <string name="sname">Enter Surname</string>
+    <string name="address">Enter address</string>
+    <string name="IDnumer">Enter ID Number</string>
+    <string name="subtitle">SIgn Up</string>
+    <string name="ssname">Surname</string>
+    <string name="dlNumber">DL Number</string>
+    <string name="hintdl">Enter DL Number</string>
+    <string name="number">Phone Number</string>
+    <string name="hintPhone">Enter Phone Number</string>
+    <string name="IDn">ID Number</string>
+    <string name="hintiD">Enter ID Number</string>
+    <string name="new_user">New User?</string>
+    <string name="existing">Existing User/Admin?</string>
+    <string name="btn_login">LOG IN</string>
+    <string name="btn_signup">SIGN UP</string>
+    <string name="lblpass">Password</string>
+    <string name="lblconfirmpass">Confirm Password</string>
+    <string name="hintconfirm"> Enter password</string>
+    <string name="hint_confirm">Confirm Entered password</string>
+    <string name="btnpass">Create Password</string>
+    <string name="town1">Nairobi</string>
+    <string name="Town2">Kisumu</string>
+    <string name="town3">Nakuru</string>
+    <string name="town4">Mombasa</string>
+    <string name="veh1">Suv</string>
+    <string name="veh2">Saloon</string>
+    <string name="veh3">Trucks</string>
+    <string name="veh4">Bike</string>
+    <string name="content_desc_truckimage">truckimage</string>
+    <string name="content_desc_saloonimage">saloonimage</string>
+    <string name="content_desc_suvimage">suvimage</string>
+    <string name="content_desc_carimage">carimage</string>
+    <string name="name">First Name</string>
+    <string name="Sname">SurName</string>
+    <string name="btn_next">Next</string>
+    <string name="content_desc_btnnai">btnNai</string>
+    <string name="btnkis">btnkis</string>
+    <string name="btnnaks">btnNaks</string>
+    <string name="content_desc_truckbtn">truckbtn</string>
+    <string name="content_desc_bikeimage">bikeimage</string>
+    <string name="title_activity_veh_list">Veh_List</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="carlist">All</string>
+    <string name="carlist1">Available</string>
+    <string name="carlist2">Toyota</string>
+    <string name="carlist3">BMW</string>
+    <string name="carlist4">Honda</string>
+    <string name="carlist5">Hyundai</string>
+    <string name="cont_desc_toyotasuvbutton">toyotasuvbutton</string>
+    <string name="cont_desc_toyotasuvbtn2">toyotasuvbtn2</string>
+    <string name="toyotasuvbtn3">toyotasuvbtn3</string>
+    <string name="title_bike">Bikes</string>
+    <string name="tit_category">Category</string>
+    <string name="title_location">Our Locations</string>
+    <string name="description">Status :</string>
+    <string name="description2">Capacity :</string>
+    <string name="description3">Transmission :</string>
+    <string name="description4">Price/day :</string>
+    <string name="description5">Color :</string>
+    <string name="description6">Trips :</string>
+    <string name="image8">image</string>
+    <string name="btn_view">View</string>
+    <string name="image2">image</string>
+    <string name="title_desc">Vehicle Description</string>
+    
+    <string-array name="Vehicle_Description">
+        <item>Name</item>
+        <item>Make</item>
+        <item>Type</item>
+        <item>Capacity</item>
+        <item>Transmission</item>
+        <item>Color</item>
+        <item>Price/day</item>
+        <item>Status</item>
+        <item>TownID</item>
+        <item>VehicleID</item>
+    </string-array>
+
+    <string-array name="bill_desc">
+        <item>Bill Number :</item>
+        <item>Rent Duration :</item>
+        <item>Mode of payment :</item>
+        <item>Price/day :</item>
+        <item>Total amount :</item>
+        <item>Town ID :</item>
+        <item>User ID :</item>
+        <item>vehicle ID :</item>
+    </string-array>
+    <string name="txt_email">Email Address</string>
+    <string name="txt_gender">Gender</string>
+    <string name="hint_email">Enter Email Address</string>
+
+
+</resources>
