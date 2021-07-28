@@ -99,13 +99,6 @@ public class signup extends AppCompatActivity implements View.OnClickListener {
         String phonenum=textphonenumber.getText().toString().trim();
         String email = edtext_email.getText().toString().trim();
 
-        btn_next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opennext();
-            }
-        });
-
         if (!validateinputs(fname,sname,IDnum,DLnum,phonenum,email)){
             CollectionReference dbusers=db.collection("users");
             userhelper user = new userhelper(fname,sname,Double.parseDouble(IDnum),Double.parseDouble(DLnum),Double.parseDouble(phonenum),email);
@@ -114,6 +107,7 @@ public class signup extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onSuccess(DocumentReference documentReference) {
                     Toast.makeText(signup.this,"New  User added", Toast.LENGTH_LONG).show();
+                    opennext();
 
                 }
             });
@@ -124,8 +118,6 @@ public class signup extends AppCompatActivity implements View.OnClickListener {
 
 
     }
-
-
     public void opennext(){
         Intent intent= new Intent(this,passwordconfirm.class );
         startActivity(intent);

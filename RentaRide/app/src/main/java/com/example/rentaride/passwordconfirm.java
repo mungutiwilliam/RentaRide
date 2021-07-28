@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class passwordconfirm extends AppCompatActivity {
 
      Button btnconfirmpass;
@@ -16,10 +18,13 @@ public class passwordconfirm extends AppCompatActivity {
      ImageView imageView4;
      EditText edittextpass1,edittextpass2;
 
+     FirebaseFirestore db;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_passwordconfirm);
+        db= FirebaseFirestore.getInstance();
 
         //Edittext
         edittextpass1=(EditText) findViewById(R.id.edittextpass1);
@@ -35,10 +40,19 @@ public class passwordconfirm extends AppCompatActivity {
         btnconfirmpass=(Button) findViewById(R.id.btnconfirmpass);
         btnconfirmpass.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {next();}
+            public void onClick(View v) {
+                if ()
+                next();}
             });
     }
 
+    public void validateuser()
+    {
+        if(edittextpass1=edittextpass2);
+
+            next();
+
+    }
         public void next(){
             Intent intent= new Intent(this,home.class );
             startActivity(intent);
