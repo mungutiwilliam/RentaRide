@@ -11,10 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.myviewholder> {
 
-    String data[];
+    String[] data;
     Context context;
 
-    public Adapter(Context ct,String s1[]){
+
+    public Adapter(Context ct, String[] s1){
         context=ct;
         data=s1;
     }
@@ -39,7 +40,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myviewholder> {
 
     @Override
     public int getItemCount() {
-        return 1;
+        return 10;
     }
 
     public class myviewholder extends RecyclerView.ViewHolder {
