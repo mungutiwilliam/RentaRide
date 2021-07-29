@@ -1,47 +1,50 @@
 package com.example.rentaride;
 
 public class userhelper {
-    private String fname, sname;
-    private Double IDnum;
-    private Double DLnum;
-    private Double phonenum;
-    private String email;
+    private final String fname;
+    private final String sname;
+    private final Double IDnum;
+    private final Double DLnum;
+    private final Double phonenum;
+    private final String email;
 
-    public userhelper(){
 
-
-    }
-
-    public userhelper(String fname, String sname, Double IDnum, Double DLnum, Double phonenum,String email) {
-        this.fname = fname;
-        this.sname = sname;
-        this.IDnum = IDnum;
-        this.DLnum = DLnum;
-        this.phonenum = phonenum;
-        this.email=email;
+    public userhelper(String namef, String nameS, Double num, Double Dnum, Double phone,String mail) {
+        this.fname = namef;
+        this.sname = nameS;
+        this.IDnum = num;
+        this.DLnum = Dnum;
+        this.phonenum = phone;
+        this.email=mail;
     }
 
     public String getFname() {
+
         return fname;
     }
 
     public String getSname() {
+
         return sname;
     }
 
     public Double getIDnum() {
+
         return IDnum;
     }
 
     public Double getDLnum() {
+
         return DLnum;
     }
 
     public Double getPhonenum() {
+
         return phonenum;
     }
 
     public String getEmail() {
+
         return email;
     }
 }
