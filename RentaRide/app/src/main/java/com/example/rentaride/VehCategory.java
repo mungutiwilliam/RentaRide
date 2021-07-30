@@ -32,7 +32,8 @@ public class VehCategory extends AppCompatActivity {
         suvbtn=  findViewById(R.id.suvbtn);
         suvbtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 openlist();
             }
         });
@@ -40,7 +41,8 @@ public class VehCategory extends AppCompatActivity {
         btnTruck= findViewById(R.id.btnTruck);
         btnTruck.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 openlist();
             }
         });
@@ -48,7 +50,8 @@ public class VehCategory extends AppCompatActivity {
         saloonbtn= findViewById(R.id.saloonbtn);
         saloonbtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 openlist();
             }
         });
@@ -56,7 +59,8 @@ public class VehCategory extends AppCompatActivity {
         btnbike= findViewById(R.id.btnbike);
         btnbike.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 openlist();
             }
         });

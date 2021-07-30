@@ -1,12 +1,13 @@
 package com.example.rentaride;
 
 public class userhelper {
-    private final String fname;
-    private final String sname;
-    private final Double IDnum;
-    private final Double DLnum;
-    private final Double phonenum;
-    private final String email;
+     String fname,sname,email;
+     Double IDnum,DLnum,phonenum;
+
+    userhelper()
+    {
+
+    }
 
 
     public userhelper(String namef, String nameS, Double num, Double Dnum, Double phone,String mail) {
