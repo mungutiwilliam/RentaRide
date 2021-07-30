@@ -26,54 +26,54 @@ public class veh_list extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_veh_list);
 
-        textView30=(TextView) findViewById(R.id.textView30);
-        title_toyota=(TextView) findViewById(R.id.title_toyota);
-        txttrips2=(TextView) findViewById(R.id.txttrips2);
-        textView31=(TextView) findViewById(R.id.textView31);
-        textView27=(TextView) findViewById(R.id.textView27);
-        textView29=(TextView) findViewById(R.id.textView29);
-        textView28=(TextView) findViewById(R.id.textView28);
-        textView25=(TextView) findViewById(R.id.textView25);
-        title_bmw=(TextView) findViewById(R.id.title_bmw);
-        texviewCapacity=(TextView) findViewById(R.id.texviewCapacity);
-        textviewTrips=(TextView) findViewById(R.id.textviewTrips);
-        textView32=(TextView) findViewById(R.id.textView32);
-        txtCapacity3=(TextView) findViewById(R.id.txtCapacity3);
-        txtTrips3=(TextView) findViewById(R.id.txtTrips3);
-        category_title=(TextView) findViewById(R.id.category_title);
-        honda39=(TextView) findViewById(R.id.honda39);
-        txtCapacity=(TextView) findViewById(R.id.txtCapacity);
+        textView30= findViewById(R.id.textView30);
+        title_toyota= findViewById(R.id.title_toyota);
+        txttrips2=findViewById(R.id.txttrips2);
+        textView31= findViewById(R.id.textView31);
+        textView27=findViewById(R.id.textView27);
+        textView29=findViewById(R.id.textView29);
+        textView28=findViewById(R.id.textView28);
+        textView25=findViewById(R.id.textView25);
+        title_bmw= findViewById(R.id.title_bmw);
+        texviewCapacity=findViewById(R.id.texviewCapacity);
+        textviewTrips=findViewById(R.id.textviewTrips);
+        textView32= findViewById(R.id.textView32);
+        txtCapacity3=findViewById(R.id.txtCapacity3);
+        txtTrips3= findViewById(R.id.txtTrips3);
+        category_title=findViewById(R.id.category_title);
+        honda39=findViewById(R.id.honda39);
+        txtCapacity=findViewById(R.id.txtCapacity);
 
 
         //Scrollview
-        all_scrollview=(HorizontalScrollView) findViewById(R.id.all_scrollview);
-        toyota_scrollview=(HorizontalScrollView) findViewById(R.id.toyota_scrollview);
-        honda_scrollview=(HorizontalScrollView) findViewById(R.id.honda_scrollview);
+        all_scrollview= findViewById(R.id.all_scrollview);
+        toyota_scrollview= findViewById(R.id.toyota_scrollview);
+        honda_scrollview=findViewById(R.id.honda_scrollview);
 
 
         //imageview
-        bmw_image=(ImageView) findViewById(R.id.bmw_image);
-        honda_image=(ImageView) findViewById(R.id.honda_image);
-        toyota_image=(ImageView) findViewById(R.id.toyota_image);
+        bmw_image=findViewById(R.id.bmw_image);
+        honda_image= findViewById(R.id.honda_image);
+        toyota_image=findViewById(R.id.toyota_image);
 
         //cardview
-        cview1=(CardView) findViewById(R.id.cview1);
-        cview2=(CardView) findViewById(R.id.cview2);
-        cview3=(CardView) findViewById(R.id.cview3);
-        cview4=(CardView) findViewById(R.id.cview4);
-        cview5=(CardView) findViewById(R.id.cview5);
-        cview6=(CardView) findViewById(R.id.cview6);
-        cview7=(CardView) findViewById(R.id.cview7);
-        cview8=(CardView) findViewById(R.id.cview8);
-        cview9=(CardView) findViewById(R.id.cview9);
+        cview1= findViewById(R.id.cview1);
+        cview2= findViewById(R.id.cview2);
+        cview3=findViewById(R.id.cview3);
+        cview4= findViewById(R.id.cview4);
+        cview5=findViewById(R.id.cview5);
+        cview6= findViewById(R.id.cview6);
+        cview7=findViewById(R.id.cview7);
+        cview8= findViewById(R.id.cview8);
+        cview9=findViewById(R.id.cview9);
 
         //buttons
-        btn_view=(Button) findViewById(R.id.btn_view);
-        btn_view2=(Button) findViewById(R.id.btn_view2);
-        btn_view3=(Button) findViewById(R.id.btn_view3);
-        btn_view4=(Button) findViewById(R.id.btn_view4);
-        btn_view5=(Button) findViewById(R.id.btn_view5);
-        btn_view7=(Button) findViewById(R.id.btn_view7);
+        btn_view= findViewById(R.id.btn_view);
+        btn_view2=findViewById(R.id.btn_view2);
+        btn_view3= findViewById(R.id.btn_view3);
+        btn_view4= findViewById(R.id.btn_view4);
+        btn_view5=findViewById(R.id.btn_view5);
+        btn_view7= findViewById(R.id.btn_view7);
         btn_view.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,6 +136,7 @@ public class veh_list extends AppCompatActivity {
     {
 
         Intent intent= new Intent(this, about.class);
+        startActivity(intent);
     }
 }
 

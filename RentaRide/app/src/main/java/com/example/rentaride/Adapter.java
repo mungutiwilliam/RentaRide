@@ -1,6 +1,5 @@
 package com.example.rentaride;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,47 +8,58 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Adapter extends RecyclerView.Adapter<Adapter.myviewholder> {
+    List<String> s1;
 
-    String[] data;
-    Context context;
-
-
-    public Adapter(Context ct, String[] s1){
-        context=ct;
-        data=s1;
+    public Adapter(List<String> s1) {
+        this.s1 = s1;
     }
-
 
     @NonNull
-    @org.jetbrains.annotations.NotNull
     @Override
-    public myviewholder onCreateViewHolder(@NonNull @org.jetbrains.annotations.NotNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater=LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.my_row, parent, false);
+    public myviewholder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
+
+        LayoutInflater layoutInflater= LayoutInflater.from(parent.getContext());
+        View view=layoutInflater.inflate(R.layout.my_row,parent, false);
+
+        myviewholder myviewholder= new myviewholder(view);
+        s1=new ArrayList<>();
 
 
-        return new myviewholder(view);
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull @org.jetbrains.annotations.NotNull Adapter.myviewholder holder, int position) {
-        holder.mytext.setText(data[position]);
-
+        return myviewholder;
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return s1.size();
     }
 
-    public class myviewholder extends RecyclerView.ViewHolder {
-        TextView mytext,mytext2;
+    @Override
+    public void onBindViewHolder(@NonNull @NotNull myviewholder holder, int position) {
 
-        public myviewholder(@NonNull @org.jetbrains.annotations.NotNull View itemView) {
+        holder.txt_atribute.setText(String.valueOf(position));
+        holder.txt_atribute.setText(s1.get(position));
+
+    }
+
+    class myviewholder extends RecyclerView.ViewHolder{
+
+        TextView txt_atribute,txtdescription;
+
+        public myviewholder(@NonNull @NotNull View itemView) {
             super(itemView);
-            mytext=itemView.findViewById(R.id.txt_atribute);
-            mytext2=itemView.findViewById(R.id.txtdescription);
+
+            txt_atribute=itemView.findViewById(R.id.txt_atribute);
+            txtdescription=itemView.findViewById(R.id.txtdescription);
+
+
         }
     }
+
+
 }

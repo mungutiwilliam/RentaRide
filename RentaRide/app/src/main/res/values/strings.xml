@@ -74,7 +74,7 @@
     <string name="btn_view">View</string>
     <string name="image2">image</string>
     <string name="title_desc">Vehicle Description</string>
-    
+
     <string-array name="Vehicle_Description">
         <item>Name</item>
         <item>Make</item>

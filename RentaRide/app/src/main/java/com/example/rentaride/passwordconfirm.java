@@ -28,16 +28,16 @@ public class passwordconfirm extends AppCompatActivity {
         db= FirebaseFirestore.getInstance();
 
         //Edittext
-        edittextpass1=(EditText) findViewById(R.id.edittextpass1);
-        edittextpass2=(EditText) findViewById(R.id.edittextpass2);
+        edittextpass1=findViewById(R.id.edittextpass1);
+        edittextpass2=findViewById(R.id.edittextpass2);
 
         //Textview
-        textView5=(TextView) findViewById(R.id.textView5);
-        textView7=(TextView) findViewById(R.id.textView7);
-        textView8=(TextView) findViewById(R.id.textView8);
+        textView5=findViewById(R.id.textView5);
+        textView7=findViewById(R.id.textView7);
+        textView8=findViewById(R.id.textView8);
         //imageview
-        imageView4=(ImageView) findViewById(R.id.imageView4);
-        btnconfirmpass=(Button) findViewById(R.id.btnconfirmpass);
+        imageView4= findViewById(R.id.imageView4);
+        btnconfirmpass= findViewById(R.id.btnconfirmpass);
         btnconfirmpass.setOnClickListener(this::onClick);
 
     }

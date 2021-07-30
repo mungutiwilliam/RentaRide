@@ -18,16 +18,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageView=(ImageView) findViewById(R.id.imageView);
+        imageView= findViewById(R.id.imageView);
 
         //textview
-        textuser=(TextView) findViewById(R.id.textuser);
-        text_login=(TextView) findViewById(R.id.text_login);
-        texttitle=(TextView) findViewById(R.id.texttitle);
+        textuser=findViewById(R.id.textuser);
+        text_login= findViewById(R.id.text_login);
+        texttitle= findViewById(R.id.texttitle);
 
 
 
-        btn_signup=(Button) findViewById(R.id.btn_signup);
+        btn_signup= findViewById(R.id.btn_signup);
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        btnLogin=(Button) findViewById(R.id.btnLogin);
+        btnLogin=findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
